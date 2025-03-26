@@ -37,7 +37,7 @@
 
 <script>
     const bmiCalculate=(h,w)=>{
-        let res=w.value/(h.value**2)
+        let res=(w.value/(h.value**2)).toFixed(2)
         out.innerHTML= `Your Body Mass Index : ${res}`   
         out.style.color = "green" 
         out.style.fontSize = "20px"
